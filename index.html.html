@@ -1,0 +1,254 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Das Kindergericht Rollenspiel: Das Recht auf Spiel</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    // Set up Tailwind CSS for a custom theme
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#4ade80',
+                    secondary: '#1d4ed8',
+                    background: '#f1f5f9',
+                },
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+            }
+        }
+    }
+</script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f1f5f9;
+        color: #334155;
+    }
+    .card {
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .collapsible-header {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .collapsible-header:hover {
+        background-color: #f0f4f8;
+    }
+    .collapsible-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    }
+    .collapsible-content.active {
+        max-height: 1000px;
+        padding-top: 1rem;
+    }
+    .arrow-icon {
+        transition: transform 0.3s ease;
+    }
+    .collapsible-header.active .arrow-icon {
+        transform: rotate(180deg);
+    }
+</style>
+
+<div class="p-6 md:p-12 lg:p-24 max-w-7xl mx-auto">
+    <!-- Header Section -->
+    <header class="text-center mb-10">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Das Recht auf Spiel</h1>
+        <p class="text-gray-600">Ein interaktives Arbeitsblatt für Fallstudien in der Pädagogik</p>
+    </header>
+
+    <!-- The Case Section -->
+    <section class="card mb-8 p-6 md:p-8">
+        <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">Fallsituation: „Die Schatzgrube im Kita-Garten“</h2>
+        <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>Der sechsjährige Ole P. spielt an einem sonnigen Vormittag im Außengelände der Kindertagesstätte. Mit einer kleinen Schaufel ist er hochkonzentriert dabei, ein tiefes Loch in den Rasen des Gartens zu graben. In seiner Fantasie entsteht dort eine Schatzgrube, in der er wertvolle Dinge verstecken möchte. Ole ist ganz in sein Spiel vertieft – er zeigt Ausdauer, Kreativität und Selbstbestimmung.</p>
+            <p>Die Erzieherin Frau Krause beobachtet das Geschehen. Einerseits erkennt sie den hohen pädagogischen Wert dieses Spiels. Andererseits sieht sie Probleme in Bezug auf ihre Aufsichtspflicht, die Durchsetzung der Hausordnung und Sicherheit sowie ihren Erziehungsauftrag. Sie ist unsicher, wie sie sich richtig entscheiden soll.</p>
+            <p>Nach kurzem Zögern verbietet Frau Krause das Weiterspielen im Rasen. Stattdessen bietet sie ihm an, in der Sandkiste zu spielen, wo er unbegrenzt Löcher und „Schatzgruben“ bauen kann.</p>
+            <p>Ole ist jedoch enttäuscht und ruft: „Das ist unfair! Ich will hier graben, nicht im Sandkasten. Das ist doof und macht keinen Spaß! Wir haben doch gelernt, dass Kinder ein Recht auf Spielen haben. Und ich darf doch selber entscheiden, wie ich spiele! Warum nehmt ihr mir mein Recht weg?“</p>
+            <p>Frau Krause fühlt sich innerlich zerrissen: Hat sie richtig gehandelt? Ole fühlt sich in seinen Rechten verletzt und „klagt“ die Erzieherin vor einem fiktiven Kindergericht an.</p>
+        </div>
+    </section>
+
+    <!-- Argumentation Sections -->
+    <section class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- Anwalt des Kindes -->
+        <div class="card p-6 md:p-8">
+            <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                <span class="mr-2 text-primary text-3xl">⚖️</span>
+                Anwälte des Kindes
+            </h2>
+            <p class="text-gray-600 mb-4">Verteidigen Sie das Recht des Kindes, die Schatzgrube zu graben. Begründen Sie Ihre Argumente mit den Gesetzen aus dem "Juristischen Werkzeugkasten".</p>
+        </div>
+
+        <!-- Anwalt der Einrichtung -->
+        <div class="card p-6 md:p-8">
+            <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                <span class="mr-2 text-secondary text-3xl">🛡️</span>
+                Anwälte der Einrichtung
+            </h2>
+            <p class="text-gray-600 mb-4">Verteidigen Sie die Entscheidung der Erzieherin. Begründen Sie Ihre Argumente mit den Gesetzen aus dem "Juristischen Werkzeugkasten".</p>
+        </div>
+    </section>
+
+    <!-- Legal Toolbox Section -->
+    <section class="card p-6 md:p-8">
+        <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 mb-6">Juristischer Werkzeugkasten</h2>
+        <p class="text-gray-600 mb-6">Nutzen Sie diese Informationen als Referenz, um Ihre Argumente zu formulieren. Klicken Sie auf die Überschriften, um die Details anzuzeigen.</p>
+        <div class="space-y-4">
+            
+            <!-- AEMR Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">1. Allgemeine Erklärung der Menschenrechte (AEMR)</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Die AEMR legt das Recht auf Spiel nicht explizit fest, aber sie bietet eine wichtige Grundlage dafür. Das Spielrecht ist in der AEMR in den größeren Kontext des Rechts auf Erholung und Freizeit eingebettet.</p>
+                    <h4 class="font-semibold text-gray-700">Artikel 24 der AEMR: Recht auf Erholung und Freizeit</h4>
+                    <p class="text-gray-600 mt-2">Artikel 24 der AEMR besagt: "Jeder Mensch hat das Recht auf Erholung und Freizeit und insbesondere auf eine vernünftige Begrenzung der Arbeitszeit sowie auf regelmäßigen bezahlten Urlaub." Für Erwachsene zielt dieser Artikel auf den Schutz vor Überarbeitung und die Gewährleistung von Freizeit ab. Im übertragenen Sinne und in der Auslegung für Kinder bedeutet dies, dass Kinder ein Recht auf eine Zeit haben, die frei von Zwängen und Pflichten ist. Das Spiel fällt direkt unter diese Kategorie, da es die primäre Form der Erholung und Freizeit im Kindesalter ist. Auch wenn die AEMR nicht speziell Kinder benennt, gilt die Universalität ihrer Prinzipien. Die AEMR ist der Vorläufer der UN-Kinderrechtskonvention, die das Recht auf Spiel in Artikel 31 explizit und detailliert festschreibt.</p>
+                </div>
+            </div>
+
+            <!-- UN-KRK Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">2. UN-Kinderrechtskonvention (KRK)</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Die UN-Kinderrechtskonvention ist das bedeutendste Dokument, das die Rechte von Kindern weltweit schützt.</p>
+                    <h4 class="font-semibold text-gray-700">Artikel 31: Recht auf Spiel</h4>
+                    <p class="text-gray-600 mt-2">Artikel 31 ist der zentrale Punkt, der das Recht auf Spiel direkt anspricht. Er besagt: "Die Vertragsstaaten erkennen das Recht des Kindes auf Ruhe und Freizeit, auf Spiel und altersgemäße aktive Erholung sowie auf freie Teilnahme am kulturellen und künstlerischen Leben an." Für Kindertagesstätten bedeutet dies nicht nur, dass sie Spielmöglichkeiten anbieten müssen, sondern auch, dass sie dem Kind die Zeit und den Freiraum geben müssen, sich ungestört und selbstbestimmt im Spiel zu entfalten. Spiel ist hierbei kein Luxus, sondern ein grundlegendes Menschenrecht.</p>
+                    <h4 class="font-semibold text-gray-700 mt-4">Weitere relevante Artikel:</h4>
+                    <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+                        <li>**Artikel 3 (Wohl des Kindes):** Bei allen Maßnahmen, die Kinder betreffen, muss das Wohl des Kindes vorrangig berücksichtigt werden. Spiel ist essenziell für die Entwicklung und damit für das Wohl des Kindes.</li>
+                        <li>**Artikel 12 (Meinungsäußerung):** Kinder haben das Recht, in allen sie betreffenden Angelegenheiten ihre Meinung frei zu äußern. Dies schließt die Gestaltung ihres Tagesablaufs und der Spielumgebung mit ein.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GG Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">3. Grundgesetz (GG) in Deutschland</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Das deutsche Grundgesetz schützt die fundamentalen Rechte aller Menschen in Deutschland, einschließlich der Kinder.</p>
+                    <h4 class="font-semibold text-gray-700">Artikel 2 Abs. 1 (Freie Entfaltung der Persönlichkeit)</h4>
+                    <p class="text-gray-600 mt-2">Dieses Grundrecht gilt uneingeschränkt auch für Kinder. Das Spiel ist die Urform der Persönlichkeitsentfaltung im Kindesalter. Durch das Spiel lernen Kinder, ihre Umwelt zu verstehen, ihre Fähigkeiten zu erproben und ihre Kreativität auszudrücken.</p>
+                    <h4 class="font-semibold text-gray-700 mt-4">Artikel 6 Abs. 2 (Pflege und Erziehung)</h4>
+                    <p class="text-gray-600 mt-2">Dieser Artikel legt die elterliche Verantwortung fest, die das Recht auf Spiel mit einschließt. Die Kindertagesstätte als familienergänzende Einrichtung trägt hierbei eine Mitverantwortung.</p>
+                </div>
+            </div>
+            
+            <!-- SGB VIII Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">4. Kinder- und Jugendhilfegesetz (SGB VIII)</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Das SGB VIII ist das Herzstück der deutschen Jugendhilfe und regelt die Angebote der Kindertagesbetreuung.</p>
+                    <h4 class="font-semibold text-gray-700">§ 22a (Grundsätze der Förderung in Tageseinrichtungen)</h4>
+                    <p class="text-gray-600 mt-2">Dieser Paragraph betont die Partizipation von Kindern. Sie sollen an Entscheidungen, die sie betreffen, beteiligt werden. In der Kita bedeutet dies, dass Kinder ein Mitspracherecht bei der Auswahl von Spielmaterialien, bei der Gestaltung der Räume oder bei der Planung von Aktivitäten haben sollten.</p>
+                    <h4 class="font-semibold text-gray-700 mt-4">§ 8 (Beteiligung von Kindern und Jugendlichen)</h4>
+                    <p class="text-gray-600 mt-2">Hier wird das Recht auf Beteiligung nochmals explizit hervorgehoben. Beschwerden und Anregungen von Kindern müssen ernst genommen werden, was ein zentraler Aspekt der Demokratiebildung ist.</p>
+                    <h4 class="font-semibold text-gray-700 mt-4">§ 1 (Recht auf Erziehung und Entwicklung)</h4>
+                    <p class="text-gray-600 mt-2">Hier wird der Auftrag der Jugendhilfe formuliert, junge Menschen in ihrer Entwicklung zu fördern und sie zu eigenverantwortlichen und gemeinschaftsfähigen Persönlichkeiten zu machen. Das Spiel ist das wichtigste Mittel, um diese Ziele zu erreichen.</p>
+                </div>
+            </div>
+            
+            <!-- BKiSchG Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">5. Bundeskinderschutzgesetz (BKiSchG)</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Das BKiSchG zielt darauf ab, das Wohl von Kindern zu sichern und ihre Entwicklung zu fördern.</p>
+                    <h4 class="font-semibold text-gray-700">§ 1 (Grundsatz, Aufgabe)</h4>
+                    <p class="text-600 mt-2">Das Gesetz formuliert den Anspruch, dass das Wohl des Kindes vorrangig berücksichtigt werden muss. Dies schließt die Schaffung einer sicheren und anregenden Umgebung ein, in der sich Kinder frei und ungestört im Spiel entfalten können.</p>
+                    <h4 class="font-semibold text-gray-700 mt-4">§ 8a (Schutzauftrag bei Kindeswohlgefährdung)</h4>
+                    <p class="text-gray-600 mt-2">Kindertagesstätten haben die Pflicht, auf Anzeichen einer Kindeswohlgefährdung zu achten. Ein Mangel an Spielmöglichkeiten oder die Unterbindung des Spiels könnte als solches Anzeichen interpretiert werden, da es die gesunde Entwicklung behindert.</p>
+                </div>
+            </div>
+
+            <!-- Aufsichtspflicht Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">6. Aufsichtspflicht und Gefahrenabwehr</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Die Aufsichtspflicht ist eine zentrale rechtliche und moralische Verantwortung, die Fachkräfte in Kindertageseinrichtungen tragen. Sie leitet sich aus dem Bürgerlichen Gesetzbuch (§ 832 BGB) ab und wird durch die pädagogischen Aufträge des SGB VIII ergänzt.</p>
+                    <h4 class="font-semibold text-gray-700">Grundsatz der Aufsichtspflicht</h4>
+                    <p class="text-gray-600 mt-2">Die Aufsichtspflicht bedeutet, dass die Fachkraft alle erforderlichen Maßnahmen ergreifen muss, um eine Schädigung der ihr anvertrauten Kinder oder eine Schädigung Dritter durch die Kinder zu verhindern. Dies ist die höchste Priorität und steht im Zweifelsfall über dem Recht auf freies Spiel. Eine Nichterfüllung dieser Pflicht kann zu zivil- und strafrechtlichen Konsequenzen führen.</p>
+                    <h4 class="font-semibold text-gray-700 mt-4">Gefahrenabwehr</h4>
+                    <p class="text-gray-600 mt-2">Ein gefährliches Loch im Garten ist ein klares Beispiel für eine Situation, in der die Aufsichtspflicht aktiv wird. Das Handeln der Erzieherin, das Spiel zu unterbrechen, ist eine notwendige Maßnahme, um eine potenzielle Gefährdung zu verhindern. Es ist keine Einschränkung der kindlichen Entfaltung, sondern die Erfüllung einer gesetzlichen Pflicht.</p>
+                </div>
+            </div>
+
+            <!-- Sicherheit und Einhaltung der Hausordnung Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">7. Sicherheit und Einhaltung der Hausordnung</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Jede Institution hat Regeln, die das Zusammenleben und die Sicherheit aller Beteiligten gewährleisten. Diese Regeln dienen dem Gemeinwohl und sind eine Voraussetzung für ein funktionierendes, harmonisches Miteinander.</p>
+                    <h4 class="font-semibold text-gray-700">Das Spiel im Kontext der Gemeinschaft</h4>
+                    <p class="text-gray-600 mt-2">Das Recht auf freie Entfaltung endet dort, wo die Sicherheit, Gesundheit oder die Rechte anderer Kinder verletzt werden. Das Graben außerhalb der Sandkiste verstößt gegen die Regeln der Einrichtung, die dazu dienen, die Gartenanlage zu schützen und die Sicherheit für alle zu gewährleisten. Ein funktionierendes Miteinander basiert auf der gegenseitigen Achtung von Regeln und Grenzen.</p>
+                </div>
+            </div>
+
+            <!-- Akzeptanz von Grenzen Section -->
+            <div class="card p-6">
+                <div class="collapsible-header flex justify-between items-center py-2">
+                    <h3 class="font-bold text-lg text-gray-800">8. Das Akzeptieren von Grenzen</h3>
+                    <svg class="arrow-icon w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div class="collapsible-content">
+                    <p class="text-gray-600 mb-2">Die Fähigkeit, Grenzen zu akzeptieren und zu verstehen, ist ein wesentlicher Bestandteil der sozialen und emotionalen Entwicklung eines Kindes. Es ist eine pädagogische Aufgabe, Kinder dabei zu unterstützen, diese Kompetenz zu erlernen.</p>
+                    <h4 class="font-semibold text-gray-700">Lernfeld Spiel</h4>
+                    <p class="text-gray-600 mt-2">Das Spiel bietet eine ideale Lernumgebung, um den Umgang mit Grenzen zu üben. Die Erzieherin hat nicht einfach das Spiel beendet, sondern eine Alternative angeboten (die Sandkiste), die den Wunsch des Kindes nach Graben respektiert, aber innerhalb der sicheren und vereinbarten Grenzen der Einrichtung liegt. Das Kind lernt dadurch, dass seine Bedürfnisse wichtig sind, aber im Kontext der Gemeinschaft umgesetzt werden müssen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urteilsfindung Section -->
+    <section class="card p-6 md:p-8">
+        <h2 class="text-xl sm:text-2xl font-semibold text-gray-700 mb-4">Ihr Urteil</h2>
+        <p class="text-gray-600 mb-4">Fassen Sie die Argumente beider Seiten zusammen und formulieren Sie das Urteil des Gerichts.</p>
+    </section>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const headers = document.querySelectorAll('.collapsible-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                if (content.classList.contains('active')) {
+                    content.classList.remove('active');
+                    header.classList.remove('active');
+                } else {
+                    // Close all other open sections
+                    document.querySelectorAll('.collapsible-content.active').forEach(item => {
+                        item.classList.remove('active');
+                        item.previousElementSibling.classList.remove('active');
+                    });
+                    // Open the clicked one
+                    content.classList.add('active');
+                    header.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
